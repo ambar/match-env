@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "description": "My awesome project",
   "license": "MIT",
-  "main": "index.js",
-  "scripts": {}
+  "bin": "match-env",
+  "scripts": {
+    "test": "node test.mjs"
+  }
 }
