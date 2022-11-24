@@ -2,6 +2,7 @@
   "name": "match-env",
   "version": "1.0.0",
   "description": "My awesome project",
+  "repository": "ambar/match-env",
   "license": "MIT",
   "bin": "match-env",
   "scripts": {
