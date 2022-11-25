@@ -37,3 +37,8 @@ const ok = {stdout: '', stderr: ''}
   ).catch((r) => r)
   assert.deepEqual(r, ok)
 }
+
+{
+  let r = await run(`node match-env "env.FOO!=1"`).catch((r) => r)
+  assert.deepEqual(r, ok)
+}
