@@ -1,6 +1,6 @@
 # match-env
 
-Use inline (eval) script to test environment variables.
+Use an inline JavaScript expression to test environment variables.
 
 ## Install
 
@@ -19,6 +19,6 @@ match-env "NODE_ENV=='test' && BUILD_TARGET!='node'" && echo yes || echo no
 # build or noop
 match-env 'CI==`true`' && yarn build || ':'
 
-# handle `undefined`, same as `process.env.FOO==`
-match-env 'env.FOO==1' && yarn build || ':'
+# handle `undefined`, same as `(process.env.FOO || globalThis.FOO)==`
+match-env 'FOO==1' && yarn build || ':'
 ```

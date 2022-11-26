@@ -1,7 +1,7 @@
 {
   "name": "match-env",
   "version": "1.1.0",
-  "description": "My awesome project",
+  "description": "Use an inline JavaScript expression to test environment variables",
   "repository": "ambar/match-env",
   "license": "MIT",
   "bin": "match-env",
