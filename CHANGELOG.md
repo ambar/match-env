@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/ambar/match-env/compare/v1.2.0...v1.2.1) (2022-11-26)
+
+
+### Bug Fixes
+
+* add extention bin path ([d1a5f3d](https://github.com/ambar/match-env/commit/d1a5f3d9ef4afd54b23c7bec365272ffce8c200c))
+
 ## [1.2.0](https://github.com/ambar/match-env/compare/v1.1.0...v1.2.0) (2022-11-26)
 
 
