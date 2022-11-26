@@ -4,7 +4,7 @@
   "description": "Use an inline JavaScript expression to test environment variables",
   "repository": "ambar/match-env",
   "license": "MIT",
-  "bin": "match-env",
+  "bin": "match-env.js",
   "scripts": {
     "test": "node test.mjs"
   }
