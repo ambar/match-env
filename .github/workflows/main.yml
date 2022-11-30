@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, dev]
   pull_request:
     branches: [main]
 
@@ -26,6 +26,8 @@ jobs:
         run: |
           yarn
           yarn test
+          node match-env.js "f=a"
+          node match-env.js "" && echo yes || echo no
       # - name: report
       #   uses: coverallsapp/github-action@v1.0.1
       #   with:
