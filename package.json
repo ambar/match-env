@@ -1,6 +1,6 @@
 {
   "name": "match-env",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Use an inline JavaScript expression to test environment variables",
   "repository": "ambar/match-env",
   "license": "MIT",

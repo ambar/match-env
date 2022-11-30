@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ambar/match-env/compare/v1.2.1...v1.3.0) (2022-11-30)
+
+
+### Features
+
+* add call mode ([7f7a788](https://github.com/ambar/match-env/commit/7f7a78811ec8329d53e46b8b516e24ef250e20ec))
+
 ### [1.2.1](https://github.com/ambar/match-env/compare/v1.2.0...v1.2.1) (2022-11-26)
 
 
