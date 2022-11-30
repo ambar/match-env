@@ -1,9 +1,16 @@
 #!/usr/bin/env node
-process.exit(
-  +!new Function('env', `with (env) return (${process.argv[2] || 0})`)(
-    new Proxy(process.env, {
-      has: () => true,
-      get: (target, key) => (key in target ? target[key] : globalThis[key]),
-    })
-  )
+let [, , exp, arg, ...cmd] = process.argv
+// console.info({exp, arg, cmd})
+let match = new Function('env', `with (env) return (${exp || 0})`)(
+  new Proxy(process.env, {
+    has: () => true,
+    get: (target, key) => (key in target ? target[key] : globalThis[key]),
+  })
 )
+if (arg === '--') {
+  if (match && cmd.length) {
+    require('child_process').execSync(cmd.join(' '), {stdio: 'inherit'})
+  }
+} else {
+  process.exit(+!match)
+}

@@ -57,3 +57,16 @@ const ok = {stdout: '', stderr: ''}
   ).catch((r) => r)
   assert.deepEqual(r, ok)
 }
+
+{
+  // call mode
+  assert.deepEqual(
+    await run("node match-env '1==1' -- echo ok").catch((r) => r),
+    {stderr: '', stdout: 'ok\n'}
+  )
+  assert.deepEqual(
+    await run("node match-env '1==0' -- true").catch((r) => r),
+    ok
+  )
+  assert.deepEqual(await run("node match-env '1==0' --").catch((r) => r), ok)
+}
