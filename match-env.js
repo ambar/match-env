@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 let [, , exp, arg, ...cmd] = process.argv
-// console.info({exp, arg, cmd})
 let match = new Function('env', `with (env) return (${exp || 0})`)(
   new Proxy(process.env, {
     has: () => true,
